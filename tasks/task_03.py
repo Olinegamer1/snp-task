@@ -1,4 +1,7 @@
-def max_odd(arr: list):
+from typing import List
+
+
+def max_odd(arr: List):
     """
     Return max odd number in arr. If arr doesn't contain an odd number, return None.
     """

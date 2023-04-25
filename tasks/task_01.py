@@ -18,7 +18,7 @@ def is_palindrome(arg) -> bool:
 
 
 def del_punc_and_spaces(string: str) -> str:
-    """Return string without punctuation and whitespace characters."""
+    """ Return string without punctuation and whitespace characters. """
 
     translator = str.maketrans('', '', punctuation + whitespace)
     return string.translate(translator)

@@ -1,4 +1,7 @@
-def coincidence(arr: list = None, range_arr: range = None):
+from typing import List
+
+
+def coincidence(arr: List = None, range_arr: range = None):
     """
      Return a list of numbers which contained in a range range_arr.
      If one or both arguments are None, return an empty list.
@@ -12,7 +15,7 @@ def coincidence(arr: list = None, range_arr: range = None):
 
 
 def is_number_in_range(number: int | float, range_arr: range):
-    """Return True if number contained in a range"""
+    """ Return True if number contained in a range. """
 
     return range_arr[0] <= number <= range_arr[-1]
 

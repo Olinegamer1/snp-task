@@ -1,4 +1,7 @@
-def sort_list(arr: list) -> list:
+from typing import List
+
+
+def sort_list(arr: List) -> List:
     """
     Swap the min and max values in all cases and will add a min value at the end.
     """
