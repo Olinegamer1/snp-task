@@ -1,4 +1,4 @@
-from task_01 import is_palindrome
+from tasks.task_01 import is_palindrome
 
 
 def test_is_palindrome():

@@ -1,4 +1,4 @@
-from task_02 import coincidence
+from tasks.task_02 import coincidence
 
 
 def test_coincidence():

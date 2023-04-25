@@ -1,4 +1,4 @@
-from task_03 import max_odd
+from tasks.task_03 import max_odd
 
 
 def test_max_odd():
