@@ -21,7 +21,7 @@ def swap_values(val, max_value, min_value):
     """
     If val equals max_value then return min_value.
     Else if val equals min_value then return max_value.
-    Return val by default.
+    Returns val by default.
     """
 
     return max_value if val == min_value else min_value if val == max_value else val

@@ -3,17 +3,11 @@ from string import punctuation, whitespace
 
 def is_palindrome(arg) -> bool:
     """
-    Return True if string is a palindrome, ignoring whitespace, punctuation and letter case.
-    Argument will be converted to str if it's a number (float, int).
-    If argument not are str or number, return False.
+    Returns True if string is a palindrome, ignoring whitespace, punctuation and letter case.
+    Argument will be converted to str.
     """
 
-    if not isinstance(arg, (str, int, float)):
-        return False
-
-    string = str(arg)
-    lower_string = del_punc_and_spaces(string).lower()
-
+    lower_string = del_punc_and_spaces(str(arg)).lower()
     return lower_string == lower_string[::-1]
 
 

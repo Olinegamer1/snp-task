@@ -24,8 +24,8 @@ def test_is_palindrome():
     # Test edge cases
     assert is_palindrome('')
     assert not is_palindrome(None)
-    assert not is_palindrome([])
-    assert not is_palindrome({})
+    assert is_palindrome([])
+    assert is_palindrome({})
     assert not is_palindrome(1.23)
     assert not is_palindrome(True)
 

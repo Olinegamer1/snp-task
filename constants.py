@@ -5,4 +5,7 @@ FORMAT_DATE = '%d-%m-%Y %H:%M:%S'
 RPS_MOVES = {'P': 'Paper', 'S': 'Scissors', 'R': 'Rock'}
 
 # using in rps game in tasks/task_06
-WIN_MOVES = (-1, -2, 0, 3)
+WINNING_DIFFERENCE = (-1, -2, 0, 3)
+
+# using in tasks/task_09
+THRESHOLD = 9

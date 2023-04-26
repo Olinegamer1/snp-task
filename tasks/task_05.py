@@ -2,11 +2,11 @@ from datetime import datetime, timedelta
 from constants import FORMAT_DATE
 
 
-def date_in_future(days: int) -> str:
+def date_in_future(days_amount: int) -> str:
     """
-    Return current date plus N count of days if days are the int.
-    Otherwise, return current date.
+    Returns current date plus N count of days if days_amount are the int.
+    Otherwise, returns current date.
     """
 
-    date = datetime.now() + timedelta(days=days) if isinstance(days, int) else datetime.now()
+    date = datetime.now() + timedelta(days=days_amount) if isinstance(days_amount, int) else datetime.now()
     return date.strftime(FORMAT_DATE)

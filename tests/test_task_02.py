@@ -11,6 +11,9 @@ def test_coincidence():
     # Test with None as arr
     assert coincidence(None, range(1, 4)) == []
 
+    # Test with empty range
+    assert coincidence([-1, 0, 1, 2, 4], range(0)) == []
+
     # Test with empty array
     assert coincidence([], range(1, 4)) == []
 
