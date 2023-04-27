@@ -4,7 +4,7 @@ from tasks.task_01 import is_palindrome
 def test_is_palindrome():
     # Test palindrome strings
     assert is_palindrome('racecar')
-    assert is_palindrome('A man a plan a canal Panama')
+    assert is_palindrome('A man a plan a canal Panama!')
     assert is_palindrome('Was it a car or a cat I saw?')
 
     # Test non-palindrome strings

@@ -17,7 +17,7 @@ def test_rps_game_winner():
     except NoSuchStrategyError:
         pass
     else:
-        raise AssertionError("Expected a NoSuchStrategyError to be raised but none was raised")
+        raise AssertionError('Expected a NoSuchStrategyError to be raised but none was raised')
 
     # Test 5: Test a game where there are more than two players
     try:
@@ -25,7 +25,7 @@ def test_rps_game_winner():
     except WrongNumberOfPlayersError:
         pass
     else:
-        raise AssertionError("Expected a WrongNumberOfPlayersError to be raised but none was raised")
+        raise AssertionError('Expected a WrongNumberOfPlayersError to be raised but none was raised')
 
 
 if __name__ == '__main__':
