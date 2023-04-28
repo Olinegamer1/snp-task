@@ -1,7 +1,7 @@
-from typing import List
+from typing import List, Union
 
 
-def coincidence(arr: List = None, range_arr: range = None):
+def coincidence(arr: List = None, range_arr: range = None) -> List[Union[int, float]]:
     """
      Returns a list of numbers which contained in a range range_arr.
      If one or both arguments are None, return an empty list.
@@ -18,4 +18,3 @@ def is_number_in_range(number: int | float, range_arr: range):
     """ Return True if number contained in a range. """
 
     return range_arr[0] <= number <= range_arr[-1] if tuple(range_arr) else False
-

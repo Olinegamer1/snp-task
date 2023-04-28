@@ -1,7 +1,7 @@
-from typing import List
+from typing import List, Union
 
 
-def max_odd(arr: List):
+def max_odd(arr: List) -> Union[None, int, float]:
     """
     Returns max odd number in arr. If arr doesn't contain an odd number, returns None.
     """

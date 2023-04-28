@@ -2,7 +2,7 @@ from typing import Dict
 from constants import THRESHOLD
 
 
-def connect_dicts(d1: Dict[str, int], d2: Dict[str, int]) -> Dict[str, int]:
+def connect_dicts(first_dict: Dict[str, int], second_dict: Dict[str, int]) -> Dict[str, int]:
     """
     The 'connect_dicts' takes two dictionaries as input and returns a new dictionary that
     combines the keys and values of both input dictionaries.
@@ -14,8 +14,8 @@ def connect_dicts(d1: Dict[str, int], d2: Dict[str, int]) -> Dict[str, int]:
             * Sorted by key values in ASC order.
     """
 
-    sum_d1, sum_d2 = sum(d1.values()), sum(d2.values())
-    priority, other = (d1, d2) if sum_d1 > sum_d2 else (d2, d1)
+    sum_d1, sum_d2 = sum(first_dict.values()), sum(second_dict.values())
+    priority, other = (first_dict, second_dict) if sum_d1 > sum_d2 else (second_dict, first_dict)
 
     res = dict(other)
     res.update(priority)
@@ -28,7 +28,7 @@ def connect_dicts(d1: Dict[str, int], d2: Dict[str, int]) -> Dict[str, int]:
 
 def sort_by_value(dictionary: Dict[str, int]) -> Dict[str, int]:
     """ Returns a new Dict, filtered and sorted in ASC order. """
-    return {key: value for key, value in sorted(dictionary.items(), key=lambda item: item[1])}
+    return dict(sorted(dictionary.items(), key=lambda item: item[1]))
 
 
 def filter_by_value(dictionary: Dict[str, int], threshold: int) -> Dict[str, int]:

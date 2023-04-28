@@ -30,3 +30,6 @@ class Dessert:
 
     def is_delicious(self) -> bool:
         return True
+
+    def __repr__(self) -> str:
+        return f'{type(self).__name__} name={self._name}, calories={self._calories}'

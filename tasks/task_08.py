@@ -1,9 +1,9 @@
-from typing import Any
+from typing import Any, Union
 from functools import reduce
 from operator import mul
 
 
-def multiply_numbers(inputs: Any = None) -> int | None:
+def multiply_numbers(inputs: Any = None) -> Union[int, None]:
     """ Return the result of multiplying of digits if they are contained in inputs. """
 
     numbers = tuple(parse_to_numbers(inputs))

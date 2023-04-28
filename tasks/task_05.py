@@ -8,5 +8,6 @@ def date_in_future(days_amount: int) -> str:
     Otherwise, returns current date.
     """
 
-    date = datetime.now() + timedelta(days=days_amount) if isinstance(days_amount, int) else datetime.now()
+    date = datetime.now() + timedelta(days=days_amount)\
+        if isinstance(days_amount, int) else datetime.now()
     return date.strftime(FORMAT_DATE)

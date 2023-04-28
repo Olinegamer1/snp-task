@@ -1,15 +1,13 @@
-from constants import RPS_MOVES, WINNING_DIFFERENCE
 from typing import NamedTuple, List
+from constants import RPS_MOVES, WINNING_DIFFERENCE
 
 
 class NoSuchStrategyError(ValueError):
     """ Raise this error if there is a wrong move in rps_game_winner. """
-    pass
 
 
 class WrongNumberOfPlayersError(ValueError):
     """ Raise this error if there is a wrong count of players in rps_game_winner. """
-    pass
 
 
 class Player(NamedTuple):
@@ -35,7 +33,11 @@ def rps_game_winner(players: List[List[str]]) -> str:
 
 
 def check_count_of_players(players: List[List[str]]):
-    """ Checking count of players. If player's count doesn't equal two then raise WrongNumberOfPlayersError. """
+    """
+    Checking count of players.
+    Raise WrongNumberOfPlayersError if player's count doesn't equal two.
+    """
+
     if len(players) != 2:
         raise WrongNumberOfPlayersError(
             f"Incorrect players in game: got {len(players)}, expected 2")
@@ -52,8 +54,9 @@ def is_correct_moves(player_one: Player, player_two: Player):
 def choose_winner(player_one: Player, player_two: Player) -> Player:
     """
     Returns a winner in rps game. If the moves are the same, will be chosen the first player.
-    Get the ASCII code of moves ('R' : 82, 'S' : 83, 'P' : 80). The first player wins if the difference
-    between the ASCII codes of his move and the second players are equal (-1, -2, 0, 3).
+    Get the ASCII code of moves ('R' : 82, 'S' : 83, 'P' : 80). The first player wins
+    if the difference between the ASCII codes of his move and the second players
+    are equal (-1, -2, 0, 3).
     """
 
     player_one_move = ord(player_one.move)

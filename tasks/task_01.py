@@ -16,6 +16,3 @@ def del_punc_and_spaces(string: str) -> str:
 
     translator = str.maketrans('', '', punctuation + whitespace)
     return string.translate(translator)
-
-
-
