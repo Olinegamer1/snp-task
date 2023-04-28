@@ -7,12 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.4.2
 
     - name: Set up Python 3.11
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v2.3.2
       with:
         python-version: 3.11
+        node-version: 16
 
     - name: Run tests
       run: python -m unittest discover -s tests
