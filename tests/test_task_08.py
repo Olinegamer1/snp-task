@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_08 import multiply_numbers
+from task_08 import multiply_numbers
 
 
 class TestMultiplyNumbers(unittest.TestCase):

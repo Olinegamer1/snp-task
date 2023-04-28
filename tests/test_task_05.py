@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timedelta
-from tasks.task_05 import date_in_future
+from task_05 import date_in_future
 from constants import FORMAT_DATE
 
 

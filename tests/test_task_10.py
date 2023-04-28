@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_10 import counts_word
+from task_10 import counts_word
 
 
 class TestCountsWord(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_03 import max_odd
+from task_03 import max_odd
 
 
 class TestMaxOdd(unittest.TestCase):

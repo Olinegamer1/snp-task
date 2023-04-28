@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_12 import JellyBean
+from task_12 import JellyBean
 
 
 class TestJellyBean(unittest.TestCase):

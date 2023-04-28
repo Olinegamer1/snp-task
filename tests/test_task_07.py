@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_07 import combine_anagrams
+from task_07 import combine_anagrams
 
 
 class TestCombineAnagrams(unittest.TestCase):

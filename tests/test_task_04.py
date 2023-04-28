@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_04 import sort_list
+from task_04 import sort_list
 
 
 class TestSortList(unittest.TestCase):

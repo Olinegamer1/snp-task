@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_09 import connect_dicts
+from task_09 import connect_dicts
 
 
 class TestConnectDicts(unittest.TestCase):

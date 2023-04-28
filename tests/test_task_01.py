@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_01 import is_palindrome
+from task_01 import is_palindrome
 
 
 class TestIsPalindrome(unittest.TestCase):

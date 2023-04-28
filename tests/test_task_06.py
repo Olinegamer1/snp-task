@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_06 import rps_game_winner, NoSuchStrategyError, WrongNumberOfPlayersError
+from task_06 import rps_game_winner, NoSuchStrategyError, WrongNumberOfPlayersError
 
 
 class TestRpsGameWinner(unittest.TestCase):

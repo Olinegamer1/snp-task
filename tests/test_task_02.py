@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_02 import coincidence
+from task_02 import coincidence
 
 
 class TestCoincidence(unittest.TestCase):

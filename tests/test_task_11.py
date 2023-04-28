@@ -1,5 +1,5 @@
 import unittest
-from tasks.task_11 import Dessert
+from task_11 import Dessert
 
 
 class TestDessert(unittest.TestCase):
