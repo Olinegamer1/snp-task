@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
-from constants import FORMAT_DATE
+
+FORMAT_DATE = '%d-%m-%Y %H:%M:%S'
 
 
 def date_in_future(days_amount: int) -> str:
@@ -8,6 +9,6 @@ def date_in_future(days_amount: int) -> str:
     Otherwise, returns current date.
     """
 
-    date = datetime.now() + timedelta(days=days_amount)\
+    date = datetime.now() + timedelta(days=days_amount) \
         if isinstance(days_amount, int) else datetime.now()
     return date.strftime(FORMAT_DATE)

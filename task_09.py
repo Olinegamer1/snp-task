@@ -1,5 +1,6 @@
 from typing import Dict
-from constants import THRESHOLD
+
+THRESHOLD = 9
 
 
 def connect_dicts(first_dict: Dict[str, int], second_dict: Dict[str, int]) -> Dict[str, int]:

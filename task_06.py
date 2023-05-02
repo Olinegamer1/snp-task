@@ -1,5 +1,7 @@
 from typing import NamedTuple, List
-from constants import RPS_MOVES, WINNING_DIFFERENCE
+
+RPS_MOVES = {'P': 'Paper', 'S': 'Scissors', 'R': 'Rock'}
+WINNING_DIFFERENCE = (-1, -2, 0, 3)
 
 
 class NoSuchStrategyError(ValueError):
